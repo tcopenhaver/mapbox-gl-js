@@ -99,21 +99,17 @@ class CollisionTile {
             collisionBoxArray.emplaceBack();
 
             //left
-            collisionBoxArray.emplaceBack(0, 0, 0, -EXTENT, 0, EXTENT, EXTENT,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0);
+            collisionBoxArray.emplaceBack(0, 0, 0, 0, 0, -EXTENT, 0, EXTENT, Infinity, Infinity,
+                0, 0, 0, 0, 0, 0, 0, 0, 0);
             // right
-            collisionBoxArray.emplaceBack(EXTENT, 0, 0, -EXTENT, 0, EXTENT, EXTENT,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0);
+            collisionBoxArray.emplaceBack(EXTENT, 0, 0, 0, 0, -EXTENT, 0, EXTENT, Infinity, Infinity,
+                0, 0, 0, 0, 0, 0, 0, 0, 0);
             // top
-            collisionBoxArray.emplaceBack(0, 0, -EXTENT, 0, EXTENT, 0, EXTENT,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0);
+            collisionBoxArray.emplaceBack(0, 0, 0, 0, -EXTENT, 0, EXTENT, 0, Infinity, Infinity,
+                0, 0, 0, 0, 0, 0, 0, 0, 0);
             // bottom
-            collisionBoxArray.emplaceBack(0, EXTENT, -EXTENT, 0, EXTENT, 0, EXTENT,
-                0, 0, 0, 0, 0, 0, 0, 0,
-                0);
+            collisionBoxArray.emplaceBack(0, EXTENT, 0, 0, -EXTENT, 0, EXTENT, 0, Infinity, Infinity,
+                0, 0, 0, 0, 0, 0, 0, 0, 0);
         }
 
         this.tempCollisionBox = collisionBoxArray.get(0);
